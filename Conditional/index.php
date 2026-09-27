@@ -16,7 +16,7 @@
 <body>
 
    <?php 
-   $name = "Dark Matters";
+   $name = "Dark Matter";
    ?>
    <h1> You have read " <?php echo $name ?> "</h1>
 
