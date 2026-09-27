@@ -17,7 +17,7 @@
    
 
       <h1> 
-         Recommended Bookssss
+         Recommended Books
       </h1>
 
       <?php 
@@ -35,7 +35,6 @@
             echo "<li>$book</li>";
         }
         ?>
-
       </ul>
 
 
