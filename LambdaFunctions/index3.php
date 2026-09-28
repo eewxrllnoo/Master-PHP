@@ -8,7 +8,6 @@
 <body>
 
  <?php 
-
          $books = [
             [
                 "name" => "Do Android Dream of Electric Sheep",
@@ -30,21 +29,22 @@
             ]
          ];
 
-         function filterByAuthor($books, $author) {
-            $filteredBooks = [];
+          function filter($items, $key, $value) {
+            $filteredItems = [];
 
-            foreach ($books as $book) {
-                if ($book["author"] === $author) {
-                    $filteredBooks[] = $book;
+            foreach ($items as $item) {
+                if ($item[$key] === $value) {
+                    $filteredItems[] = $item;
                 }
             }
-            return $filteredBooks;
-         }
-      
+            return $filteredItems;
+         };
+
+         $filteredBooks = filter($books, "releaseYear", 1968);  
       ?>
 
     <ul>
-        <?php foreach (filterByAuthor($books, "Philip K. Dick") as $book) : ?>       
+        <?php foreach ($filteredBooks as $book) : ?>       
             <li>
                 <a href="<?php echo $book["purchaseUrl"]; ?>">
                     <?php echo $book["name"]; ?>  (<?= $book["releaseYear"]; ?>) - By <?= $book["author"]; ?>
