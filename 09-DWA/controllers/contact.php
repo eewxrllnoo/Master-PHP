@@ -3,4 +3,5 @@
 $heading = "Contact Us";
 $showWelcome = false; 
 
-require "views/contact.view.php";
+ 
+require "./views/contact.view.php";

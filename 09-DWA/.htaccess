@@ -1,0 +1,17 @@
+RewriteEngine On
+
+# Set the base path to your specific folder
+
+RewriteBase /ErwinSite/09-DWA/
+
+# If the requested filename is not a directory
+
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# And if the requested filename is not a regular file
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Then rewrite the request to index.php
+
+RewriteRule ^(.*)$ index.php [QSA,L]
