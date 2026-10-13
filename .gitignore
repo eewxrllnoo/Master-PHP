@@ -1,0 +1,6 @@
+# Ignore the outer erwin folder and anything in it
+../erwin/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
