@@ -14,7 +14,7 @@ foreach ($posts as $post) {
 }
 
 
-
+// testing the database connection
 
 
 
